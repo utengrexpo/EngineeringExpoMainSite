@@ -2,12 +2,17 @@
 
 This is the repository for the Engineering Expo website, a static site built with HTML, CSS, and JavaScript. The website is hosted on the utweb server.
 Please if you have any questions or haven't learned how to use git before, read the following cheatsheet: https://education.github.com/git-cheat-sheet-education.pdf
+Please read the entirety of the readme before making changes! 
 
 ## How to Gain Edit Access
 
 If you would like to contribute to the Engineering Expo website, you will need to gain edit access to the repository on GitHub. To do this, please contact the project administrator (this is likely the pubweb lead) and request to be added as a collaborator. The lead will need to login through the github account using "utengrexpo". Once you have been added, you will be able to make changes to the codebase.
 
+You can use vscode to try changes in a local browser. Check this link out to find out how to auto load html in your local browser using a vscode extension: https://www.freecodecamp.org/news/vscode-live-server-auto-refresh-browser/
+
 Make sure you create a personal access token in order to gain local access and commit to a development branch (not master!) Only once successful changes are made, a pull request should be made, and the live site updated by pulling from master.
+
+To check to make sure you are on the right branch, type `git branch`. It should say `* dev` and not `* master`. If it says master, do `git checkout dev`
 
 On the utweb server, you may not be able to pull unless you update the .netrc file on your profile. Every user who wants to pull master and update live site must do this on the utweb server. When you are on the linux server through ssh, just paste the following command into the terminal: 
 `echo "machine github.com login utengrexpo password <replace-with-personal-access-token>" > ~/.netrc`
@@ -20,10 +25,10 @@ It's crucial that you try changes on your local machine first when developing, a
 The Engineering Expo website uses the following branches:
 
 - `master`: This is the main branch of the repository. It contains the latest stable version of the website that is currently deployed on the server.
-- `develop`: This branch is used for ongoing development work. Changes that are pushed to this branch are tested and integrated before being merged into the `master` branch.
-- `feature-branch`: These branches are created when working on a specific feature or bugfix. When the work is complete, the branch is merged back into `develop`.
+- `dev`: This branch is used for ongoing development work. Changes that are pushed to this branch are tested and integrated before being merged into the `master` branch.
+- `feature-branch`: These branches are created when working on a specific feature or bugfix. When the work is complete, the branch is merged back into `dev`.
 
-Checkout the following cheatsheet, underneath the branch section to figure out how to branch and make changes: https://education.github.com/git-cheat-sheet-education.pdf
+Check out the following cheatsheet, underneath the branch section to figure out how to branch and make changes: https://education.github.com/git-cheat-sheet-education.pdf
 
 ## How to Make Meaningful Changes
 
@@ -37,7 +42,7 @@ When making changes to the Engineering Expo website, please ensure that your cha
 When committing changes to the Engineering Expo website, please follow these steps:
 
 1. Fork the repository and clone it to your local machine.
-2. Create a new branch for your changes based on `develop`.
+2. Create a new branch for your changes based on `develop`. Make sure you are actually not on master!
 3. Make your changes to the codebase.
 4. Test your changes to ensure that they are working correctly.
 5. Commit your changes with a meaningful commit message that describes what you changed.
