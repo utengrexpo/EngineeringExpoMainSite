@@ -9,13 +9,11 @@ If you would like to contribute to the Engineering Expo website, you will need t
 
 Make sure you create a personal access token in order to gain local access and commit to a development branch (not master!) Only once successful changes are made, a pull request should be made, and the live site updated by pulling from master.
 
-On the utweb server, you may not be able to pull unless you update the .netrc file on your profile. Every user who wants to pull master and update live site must do this.
+On the utweb server, you may not be able to pull unless you update the .netrc file on your profile. Every user who wants to pull master and update live site must do this on the utweb server. When you are on the linux server through ssh, just paste the following command into the terminal: 
+`echo "machine github.com login utengrexpo password <replace-with-personal-access-token>" > ~/.netrc`
+and replace `<replace-with-personal-access-token>` with the real personal access token of utengrexpo for that year.
 
-Just paste this command into the terminal: 
-
-echo "machine github.com login utengrexpo password <replace-with-personal-access-token>" > ~/.netrc
-
-and replace <replace-with-personal-access-token> with the real personal access token of utengrexpo for that year.
+It's crucial that you try changes on your local machine first when developing, and not on the live site! Future pubweb leads, when adding collaborators (including yourself), make sure you only give access to change the non-master branch. Then make a pull request to master from the utengrexpo account on github.com, then finally from the utweb server, to make sure that we don't unintentionally push unecessary changes when trying out experimental layouts and designs. 
 
 ## Branches
 
@@ -47,7 +45,11 @@ When committing changes to the Engineering Expo website, please follow these ste
 7. Open a pull request to merge your changes into the `develop` branch of the main repository.
 8. Wait for feedback and address any issues that are raised during the review process.
 9. Once your changes have been approved, they will be merged into the `develop` branch and deployed to the server.
+10. Try to do git checkout "develop" on the livesite. If it looks good, then do a pull request to master and pull the master
 
 ## Conclusion
 
-We hope that this readme has been helpful in guiding you through the process of contributing to the Engineering Expo website. If you have any questions or need further assistance, please do not hesitate to reach out to the project administrator or other members of the development team.
+Hopefully, this readme has been helpful in guiding you through the process of contributing to the Engineering Expo website. If you have any questions or need further assistance, please do not hesitate to reach out to the pubweb lead or other members of the development team. If you're really, really stuck, trace an older pubweb lead. 
+
+Good luck!
+-A pubweb lead
