@@ -1,0 +1,12 @@
+.about-flex a:hover {
+    color: orange;
+    -webkit-filter: brightness(70%);
+    transition: 0.1s;   
+
+}
+.about-flex a {
+    color: orange;
+    -webkit-filter: brightness(100%);
+    transition: 1s;   
+
+}
