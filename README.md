@@ -1,7 +1,7 @@
 # Engineering Expo Website
 
 This is the repository for the Engineering Expo website, a static site built with HTML, CSS, and JavaScript. The website is hosted on the utweb server.
-Please if you have any questions or haven't learned how to use git before, read the following cheatsheet: https://education.github.com/git-cheat-sheet-education.pdf
+If you have git troubles, read the following cheatsheet: https://education.github.com/git-cheat-sheet-education.pdf
 Please read the entirety of the readme before making changes! 
 
 ## How to Gain Edit Access
