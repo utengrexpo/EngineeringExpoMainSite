@@ -47,10 +47,10 @@ When committing changes to the Engineering Expo website, please follow these ste
 4. Test your changes to ensure that they are working correctly.
 5. Commit your changes with a meaningful commit message that describes what you changed.
 6. Push your changes to your forked repository.
-7. Open a pull request to merge your changes into the `develop` branch of the main repository.
+7. Open a pull request to merge your changes into the `master` branch of the main repository.
 8. Wait for feedback and address any issues that are raised during the review process.
-9. Once your changes have been approved, they will be merged into the `develop` branch and deployed to the server.
-10. Try to do git checkout "develop" on the livesite. If it looks good, then do a pull request to master and pull the master
+9. Once your changes have been approved, they will be merged into the `master` branch and deployed to the server.
+10. Try to do `git checkout dev` on the livesite before master is merged. If it looks good, then do a checkout to master and pull the master.
 
 ## Conclusion
 
