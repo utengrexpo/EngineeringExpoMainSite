@@ -335,7 +335,7 @@ body {
 
 .hero-home:before{
   background-size: cover;
-  background-image: url("/images/inPersonPhotos/bighallphoto.jpg");
+  background-image: url("../images/inPersonPhotos/bighallphoto.jpg");
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.25;
