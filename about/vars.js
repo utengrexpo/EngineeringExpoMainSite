@@ -19,3 +19,9 @@ const linkedIn = [["https://www.linkedin.com/in/brandoncmatthews/", "https://www
 ["https://www.linkedin.com/in/minh-quan-duong-046aa51bb/", "https://www.linkedin.com/in/uma-paul-b48a7425b/", "https://www.linkedin.com/in/laura-murphy-12626024b/", "https://www.linkedin.com/in/cindey-xiao-969a321a7/"],
 ["https://www.linkedin.com/in/lorren-banker-0a55691b0/", "https://www.linkedin.com/in/jenna-may-836b0a21b/", "https://www.linkedin.com/in/taima00/", "https://www.linkedin.com/in/evan-osuilleabhain/", "https://www.linkedin.com/in/manisha-sakthivelnathan/"],
 ["https://www.linkedin.com/in/falak-shah-735259205/", "https://www.linkedin.com/in/phoenixsaavedra/", "https://www.linkedin.com/in/basil-rehani-80666224a/", "https://www.linkedin.com/in/yashna-singhania-304522211/", "https://www.linkedin.com/in/tanisha-bhattacharya-1783851a9/", "https://www.linkedin.com/in/bhanaviya-venkat-307520219/"]]
+
+const major = [["Chemical Engineering '24", "Biomedical Engineering '24"],
+["Electrical and Computer Engineering '25", "Civil Engineering '24", "Electrical and Computer Engineering '25", "Environmental Engineering '25", "Chemical Engineering '24", "Environmental Engineering '26"],
+["Chemical Engineering '26", "Biomedical Engineering '26", "Biomedical Engineering '25", "Electrical and Computer Engineering '26"],
+["Mechanical Engineering '25", "Electrical and Computer Engineering '25", "Biomedical Engineering '25", "Mechanical Engineering '25", "Electrical and Computer Engineering '26"],
+["Mechanical Engineering '24", "Mechanical Engineering '26", "Biomedical Engineering '26", "Environmental Engineering '25", "Electrical and Computer Engineering '26", "Biomedical Engineering '26"]]
