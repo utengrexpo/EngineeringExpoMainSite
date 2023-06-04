@@ -335,7 +335,7 @@ body {
 
 .hero-home:before{
   background-size: cover;
-  background-image: url("../images/inPersonPhotos/bighallphoto.jpg");
+  background-image: url("../images2022/Expo_Images/expo_group_of_people_networking_main_page.JPG");
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.25;
@@ -349,7 +349,7 @@ body {
 
 .hero-corporate:before{
     background-size: cover;
-    background-image: url("/images/inPersonPhotos/crowd1.jpg");
+    background-image: url("/images2022/Expo_Images/recruiters_demoing_circuit_boards.JPG");
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.25;
@@ -362,24 +362,24 @@ body {
 }
 
 .hero-schedule:before {
-    background-image: url("/images/inPersonPhotos/_DSC0864.jpg");
+    background-image: url("/images2022/Expo_Images/two_recuiters_women_smiling.JPG");
 }
 
 .hero-sr:before {
-    background-image: url("/images/inPersonPhotos/DSC_0524.jpg");
+    background-image: url("/images2022/Expo_Images/Senior_reception_hall.JPG");
 }
 
 .hero-service:before {
-    background-image: url("/images/inPersonPhotos/_DSC0756.jpg");
+    background-image: url("/images2022/Expo_Images/engineering_kits_for_kids.JPG");
 }
 
 .hero-resources:before {
-    background-image: url("/images/inPersonPhotos/_DSC0834.jpg");
+    background-image: url("/images2022/Expo_Images/brandon_smiling_helping_student.JPG");
 
 }
 
 .hero-student:before {
-    background-image: url("/images/inPersonPhotos/_DSC0931.jpg");
+    background-image: url("/images2022/Expo_Images/recruiter_talking_to_student_epic.JPG");
 
 }
 
