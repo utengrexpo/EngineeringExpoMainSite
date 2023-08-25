@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-139128421-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-139128421-1");
+    </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("theTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <title>Employer Booth Maps - Expo - Cockrell School of Engineering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Description"
+      content="Interactive Employer Booth Maps for day one and day two for students to look at where employers are placed."
+    />
+    <link rel="icon" href="/images2023/Expo_Logo_2023.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/normalize.css@8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+      integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/styles/style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .ut-menu-right .pure-menu-has-children > .pure-menu-link:after {
+        content: "\25B8";
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- The header and topnav section that remains the same -->
+    <div>
+      <script src="../header.js"></script>
+      <a href="/"
+        ><img
+          class="logo"
+          src="/images2023/Expo_Logo_2023.png"
+          alt="The 2021 Expo logo"
+      /></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/kemayo/maphilight/jquery.maphilight.min.js"></script>
+
+    <!-- Our map related elements  -->
+    <div class="map_container">
+      <div id="scrollable_map_cont" class="split left dragscroll">
+        <!-- The image with an associated image map -->
+        <div>
+          <img
+            src="2023UTFallEngineeringExpoMap.png"
+            alt="Image with clickable areas"
+            usemap="#image-map"
+          />
+        </div>
+
+        <!-- The image map definition -->
+        <map name="image-map">
+          <area
+            shape="rect"
+            coords="6010,2970,6220,3096"
+            href="https://www.google.com"
+            alt="Area 1"
+          />
+          <!-- coords="6010,2970,6220,3096" -->
+        </map>
+      </div>
+      <div class="split right">
+        <h1>HELLO</h1>
+      </div>
+    </div>
+
+    <!-- The footer stuff -->
+    <div>
+      <script src="/footer.js"></script>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="dragscroll.js"></script>
+  </body>
+</html>

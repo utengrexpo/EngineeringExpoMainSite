@@ -1,0 +1,36 @@
+/* Style for the highlighted areas */
+:root {
+  --left-percentage: 70%;
+  --very-pale-yellow: #ffebdc;
+}
+
+.split {
+  z-index: 1;
+  height: 80vh;
+}
+
+.left {
+  width: var(--left-percentage);
+  overflow: auto;
+
+  left: 0;
+}
+
+.left img {
+  transform: scale(0.5);
+}
+
+.right {
+  width: calc(100% - var(--left-percentage));
+  right: 0;
+  background-color: var(--very-pale-yellow);
+}
+
+.map_container {
+  display: flex;
+  overflow: hidden;
+}
+
+img {
+  max-width: none !important;
+}
