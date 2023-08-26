@@ -14,7 +14,6 @@
 
 .left {
   width: var(--left-percentage);
-  
 
   left: 0;
 }
@@ -30,13 +29,11 @@
   right: 0;
   background-color: var(--very-pale-yellow);
   color: black;
-  
 }
 .toprow {
   color: white;
   padding: 30px;
   background-color: var(--burnt-orange);
-  
 }
 
 .map_container {
@@ -66,4 +63,8 @@ img {
 
 .radio-container {
   margin-top: 10px;
+}
+.highlighted {
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.5); /* Semi-transparent red */
 }
