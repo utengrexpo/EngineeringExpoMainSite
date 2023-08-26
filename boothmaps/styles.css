@@ -1,6 +1,6 @@
 /* Style for the highlighted areas */
 :root {
-  --left-percentage: 70%;
+  --left-percentage: 60%;
   --very-pale-yellow: #ffebdc;
 }
 
@@ -16,14 +16,17 @@
   left: 0;
 }
 
-.left img {
-  transform: scale(0.5);
+.left img,
+.left map {
+  transform: scale(var(--slider-value, 0.3));
+  transition: transform 0.3s ease;
 }
 
 .right {
   width: calc(100% - var(--left-percentage));
   right: 0;
   background-color: var(--very-pale-yellow);
+  padding: 30px;
 }
 
 .map_container {
@@ -33,4 +36,12 @@
 
 img {
   max-width: none !important;
+}
+
+.slider {
+  width: 100%;
+}
+
+.toprow {
+  display: flex;
 }
