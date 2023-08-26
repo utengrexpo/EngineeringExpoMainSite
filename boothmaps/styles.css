@@ -2,16 +2,19 @@
 :root {
   --left-percentage: 60%;
   --very-pale-yellow: #ffebdc;
+  --burnt-orange: #bf5700;
+  --light-orange: #f8971f;
 }
 
 .split {
   z-index: 1;
   height: 80vh;
+  overflow: auto;
 }
 
 .left {
   width: var(--left-percentage);
-  overflow: auto;
+  
 
   left: 0;
 }
@@ -26,7 +29,14 @@
   width: calc(100% - var(--left-percentage));
   right: 0;
   background-color: var(--very-pale-yellow);
+  color: black;
+  
+}
+.toprow {
+  color: white;
   padding: 30px;
+  background-color: var(--burnt-orange);
+  
 }
 
 .map_container {
@@ -40,8 +50,20 @@ img {
 
 .slider {
   width: 100%;
+  -webkit-appearance: none;
+  background: white;
+  opacity: 0.7;
 }
 
-.toprow {
-  display: flex;
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: black;
+  cursor: pointer;
+}
+
+.radio-container {
+  margin-top: 10px;
 }

@@ -99,10 +99,10 @@
         </map>
       </div>
       <div class="split right">
-        <h1>Expo Booth Map Tool</h1>
         <div class="toprow">
+          <h3>Expo Booth Map Tool</h3>
           <div class="slidecontainer">
-            <h3>Drag the map to pan and adjust zoom by using the slider</h3>
+            <p>Drag the map to pan and adjust zoom by using the slider</p>
             <input
               type="range"
               min="0.2"
@@ -113,7 +113,21 @@
               id="myZoom"
             />
           </div>
-          
+          <div>
+            <p>Select which day you would like to see</p>
+
+            <div class="radio-holder">
+              <div class="radio-container">
+                <label for="option1">Day 1: Wednesday, September 6th</label>
+                <input type="radio" id="day1" name="whichDay" />
+              </div>
+
+              <div class="radio-container">
+                <label for="option2">Day 2: Thursday, September 7th</label>
+                <input type="radio" id="day2" name="whichDay" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
