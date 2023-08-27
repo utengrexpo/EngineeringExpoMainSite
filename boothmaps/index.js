@@ -24,28 +24,32 @@ const imageCenterX = imageWidth / 2;
 const imageCenterY = imageHeight / 2;
 const highlight = document.getElementById("highlight");
 
+function alignHiglightToArea(areaTargeting, highlightAligning) {
+  scaling = getComputedStyle(document.documentElement).getPropertyValue(
+    "--map-zoom"
+  );
+  let coords = areaTargeting.coords.split(",").map((coord) => parseInt(coord));
+
+  highlightAligning.style.width = (coords[2] - coords[0]) * scaling + "px";
+  highlightAligning.style.height = (coords[3] - coords[1]) * scaling + "px";
+
+  let currentHorizontalOffset = coords[0] - imageCenterX;
+  let currentVerticalOffset = coords[1] - imageCenterY;
+
+  currentHorizontalOffset *= scaling;
+  currentVerticalOffset *= scaling;
+
+  let updatedOffsetHorizontal = imageCenterX + currentHorizontalOffset;
+  let updatedOffsetVertical = imageCenterY + currentVerticalOffset;
+
+  highlightAligning.style.left = updatedOffsetHorizontal + "px";
+  highlightAligning.style.top = updatedOffsetVertical + "px";
+  highlightAligning.style.display = "block";
+}
+
 function addBoothHoverListeners(newArea) {
-  newArea.addEventListener("mouseenter", function () {
-    scaling = getComputedStyle(document.documentElement).getPropertyValue(
-      "--map-zoom"
-    );
-    let coords = this.coords.split(",").map((coord) => parseInt(coord));
-
-    highlight.style.width = (coords[2] - coords[0]) * scaling + "px";
-    highlight.style.height = (coords[3] - coords[1]) * scaling + "px";
-
-    let currentHorizontalOffset = coords[0] - imageCenterX;
-    let currentVerticalOffset = coords[1] - imageCenterY;
-
-    currentHorizontalOffset *= scaling;
-    currentVerticalOffset *= scaling;
-
-    let updatedOffsetHorizontal = imageCenterX + currentHorizontalOffset;
-    let updatedOffsetVertical = imageCenterY + currentVerticalOffset;
-
-    highlight.style.left = updatedOffsetHorizontal + "px";
-    highlight.style.top = updatedOffsetVertical + "px";
-    highlight.style.display = "block";
+  newArea.addEventListener("mouseenter", () => {
+    alignHiglightToArea(newArea, highlight);
   });
 
   newArea.addEventListener("mouseleave", function () {
