@@ -30,7 +30,6 @@ function addBoothHoverListeners(newArea) {
       "--map-zoom"
     );
     let coords = this.coords.split(",").map((coord) => parseInt(coord));
-    console.log(coords);
 
     highlight.style.width = (coords[2] - coords[0]) * scaling + "px";
     highlight.style.height = (coords[3] - coords[1]) * scaling + "px";
@@ -43,8 +42,6 @@ function addBoothHoverListeners(newArea) {
 
     let updatedOffsetHorizontal = imageCenterX + currentHorizontalOffset;
     let updatedOffsetVertical = imageCenterY + currentVerticalOffset;
-
-    console.log(updatedOffsetHorizontal, updatedOffsetVertical);
 
     highlight.style.left = updatedOffsetHorizontal + "px";
     highlight.style.top = updatedOffsetVertical + "px";
@@ -83,6 +80,7 @@ window.addEventListener("load", function () {
 
 const slider = document.getElementById("myZoom");
 slider.addEventListener("input", function () {
+  highlight.style.display = "none";
   const sliderValue = this.value;
   document.documentElement.style.setProperty("--map-zoom", sliderValue);
 });
