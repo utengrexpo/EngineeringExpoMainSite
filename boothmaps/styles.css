@@ -34,7 +34,6 @@
   color: black;
 }
 
-
 .map_container {
   display: flex;
   overflow: hidden;
@@ -65,10 +64,18 @@ img {
   margin-top: 10px;
 }
 .highlighted {
-  background-color: rgba(255, 0, 0, 0.5); /* Semi-transparent red */
+  /* Semi-transparent red */
   position: absolute;
   z-index: 2;
   clear: both;
+}
+
+#highlight1 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#highlight2 {
+  background-color: rgba(255, 0, 0, 0.5);
 }
 
 .zoomAndCenterContainer {
@@ -105,4 +112,5 @@ img {
 
 .bottomrow {
   padding: 30px;
+  display: inline-block;
 }

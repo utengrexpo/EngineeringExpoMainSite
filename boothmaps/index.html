@@ -83,7 +83,8 @@
             usemap="#image-map"
             id="mapimage"
           />
-          <div id="highlight" class="highlighted"></div>
+          <div id="highlight1" class="highlighted"></div>
+          <div id="highlight2" class="highlighted"></div>
         </div>
 
         <!-- The image map definition -->
@@ -120,19 +121,36 @@
             <div class="radio-holder">
               <div class="radio-container">
                 <label for="option1">Day 1: Wednesday, September 6th</label>
-                <input type="radio" id="day1" name="whichDay" />
+                <input type="radio" id="day1" name="whichDay" value="1" />
               </div>
 
               <div class="radio-container">
                 <label for="option2">Day 2: Thursday, September 7th</label>
-                <input type="radio" id="day2" name="whichDay" />
+                <input type="radio" id="day2" name="whichDay" value="2" />
               </div>
             </div>
           </div>
         </div>
 
         <div class="bottomrow">
-          <h1>Hello</h1>
+          <h1>Employer Information</h1>
+
+          <label id="employerSelectionLabel" for="employers"
+            >Day X Employers (Select a day above)
+          </label>
+
+          <br />
+          <select name="employers" id="employerSelectionDropdown"></select>
+
+          <h2>Accenture</h2>
+          <h3>Booth</h3>
+          <p>507</p>
+          <h3>Industry</h3>
+          <p>Consulting</p>
+          <h3>Majors Recruited</h3>
+          <p>All majors</p>
+          <h3>Position types</h3>
+          <p>Internship</p>
         </div>
       </div>
     </div>

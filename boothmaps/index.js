@@ -3,7 +3,8 @@ const imageWidth = mapImage.naturalWidth;
 const imageHeight = mapImage.naturalHeight;
 const imageCenterX = imageWidth / 2;
 const imageCenterY = imageHeight / 2;
-const highlight = document.getElementById("highlight");
+const highlight1 = document.getElementById("highlight1");
+const highlight2 = document.getElementById("highlight2");
 
 function scrollToCenter() {
   const container = document.getElementById("scrollableMapContainer");
@@ -16,6 +17,11 @@ function scrollToCenter() {
   container.scrollLeft = centerX;
   document.documentElement.style.setProperty("--map-zoom", 0.2);
 }
+
+// function scrollIntoView(element){
+//   element.scrollIntoView({ behavior: "smooth"})
+// }
+
 // scroll to center on load
 window.addEventListener("load", function () {
   scrollToCenter();
@@ -53,7 +59,7 @@ function alignHiglightToArea(areaTargeting, highlightAligning) {
 
 function addBoothHoverListeners(newArea) {
   newArea.addEventListener("mouseenter", () => {
-    alignHiglightToArea(newArea, highlight);
+    alignHiglightToArea(newArea, highlight1);
   });
 
   newArea.addEventListener("mouseleave", function () {
@@ -88,7 +94,26 @@ window.addEventListener("load", function () {
 
 const slider = document.getElementById("myZoom");
 slider.addEventListener("input", function () {
-  highlight.style.display = "none";
+  highlight1.style.display = "none";
   const sliderValue = this.value;
   document.documentElement.style.setProperty("--map-zoom", sliderValue);
+});
+
+function updateDay(whichDay) {
+  // which Day should be either 1 or two
+  console.log(whichDay);
+}
+
+window.addEventListener("load", function () {
+
+  const whichDayButtons = document.querySelectorAll(
+    'input[type="radio"][name="whichDay"]'
+  );
+  whichDayButtons.forEach(function (radio) {
+    radio.addEventListener("change", function () {
+      if (this.checked) {
+        updateDay(parseInt(this.value));
+      }
+    });
+  });
 });
