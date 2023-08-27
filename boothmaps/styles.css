@@ -4,7 +4,7 @@
   --very-pale-yellow: #ffebdc;
   --burnt-orange: #bf5700;
   --light-orange: #f8971f;
-  --map-zoom: 0.3;
+  --map-zoom: 0.2;
 }
 
 .split {
@@ -17,7 +17,6 @@
 .left {
   width: var(--left-percentage);
   position: relative;
-
   left: 0;
 }
 
@@ -34,11 +33,7 @@
   background-color: var(--very-pale-yellow);
   color: black;
 }
-.toprow {
-  color: white;
-  padding: 30px;
-  background-color: var(--burnt-orange);
-}
+
 
 .map_container {
   display: flex;
@@ -74,4 +69,40 @@ img {
   position: absolute;
   z-index: 2;
   clear: both;
+}
+
+.zoomAndCenterContainer {
+  display: flex;
+}
+
+.recenterButtonDiv {
+  margin-left: 40px;
+  display: flex;
+}
+
+.zoomAndCenterContainer button {
+  background-color: var(--light-orange);
+  border: none;
+  padding: 1px 15px;
+  border-radius: 20px;
+}
+
+.zoomAndCenterContainer button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.toprow {
+  color: white;
+  padding: 30px;
+  background-color: var(--burnt-orange);
+}
+
+.right h1 {
+  font-size: 20px;
+}
+
+.bottomrow {
+  padding: 30px;
 }

@@ -1,13 +1,24 @@
-// scroll to center on load
-window.addEventListener("load", function () {
-  let container = document.getElementById("scrollableMapContainer");
-  let image = document.querySelector(".split.left img");
-  let centerX = (image.width - container.offsetWidth) / 2;
-  let centerY = (image.height - container.offsetHeight) / 2;
+const mapImage = document.getElementById("mapimage");
+const imageWidth = mapImage.naturalWidth;
+const imageHeight = mapImage.naturalHeight;
+const imageCenterX = imageWidth / 2;
+const imageCenterY = imageHeight / 2;
+const highlight = document.getElementById("highlight");
+
+function scrollToCenter() {
+  const container = document.getElementById("scrollableMapContainer");
+  const image = document.querySelector(".split.left img");
+  const centerX = (image.width - container.offsetWidth) / 2;
+  const centerY = (image.height - container.offsetHeight) / 2;
 
   // Scroll the container to the center
   container.scrollTop = centerY;
   container.scrollLeft = centerX;
+  document.documentElement.style.setProperty("--map-zoom", 0.2);
+}
+// scroll to center on load
+window.addEventListener("load", function () {
+  scrollToCenter();
 });
 
 function updateAreaAttributes(newArea, coordinates, boothNumber) {
@@ -16,13 +27,6 @@ function updateAreaAttributes(newArea, coordinates, boothNumber) {
   newArea.setAttribute("href", `${boothNumber}`);
   newArea.setAttribute("alt", `Booth #${boothNumber}`);
 }
-
-const mapImage = document.getElementById("mapimage");
-const imageWidth = mapImage.naturalWidth;
-const imageHeight = mapImage.naturalHeight;
-const imageCenterX = imageWidth / 2;
-const imageCenterY = imageHeight / 2;
-const highlight = document.getElementById("highlight");
 
 function alignHiglightToArea(areaTargeting, highlightAligning) {
   scaling = getComputedStyle(document.documentElement).getPropertyValue(
