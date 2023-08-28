@@ -99,13 +99,65 @@ slider.addEventListener("input", function () {
   document.documentElement.style.setProperty("--map-zoom", sliderValue);
 });
 
-function updateDay(whichDay) {
+let day1EmployerData = null;
+let day2EmployerData = null;
+
+function loadJsonFile(file) {
+  return fetch(file)
+    .then((response) => response.json())
+    .then((jsonData) => {
+      return jsonData;
+    });
+}
+
+async function populateEmployerData(whichDay) {
   // which Day should be either 1 or two
-  console.log(whichDay);
+  if (whichDay == 1) {
+    const informationFile = "/boothmaps/day1employerdata.json";
+    if (day1EmployerData == null) {
+      day1EmployerData = await loadJsonFile(informationFile);
+    }
+  } else if (whichDay == 2) {
+    const informationFile = "/boothmaps/day2employerdata.json";
+    if (day2EmployerData == null) {
+      day2EmployerData = await loadJsonFile(informationFile);
+    }
+  }
+}
+
+function updateDay(whichDay) {
+  populateEmployerData(whichDay).then(() => {
+    // update dropdown label
+    const message = `Select from Day ${whichDay} Employers`;
+    const dropdownLabel = document.getElementById("employerSelectionLabel");
+    dropdownLabel.innerHTML = message;
+
+    // clear existing dropdown values
+    const employerSelectionDropdown = document.getElementById(
+      "employerSelectionDropdown"
+    );
+    employerSelectionDropdown.innerHTML = "";
+
+    // update dropdown values
+    const employerDataRelevant =
+      whichDay == 1 ? day1EmployerData : day2EmployerData;
+    console.log(employerDataRelevant);
+
+    for (const employerName in employerDataRelevant) {
+      if (!employerDataRelevant.hasOwnProperty(employerName)) {
+        continue;
+      }
+      const newEmployerOption = document.createElement("option");
+      newEmployerOption.setAttribute("value", employerName);
+      newEmployerOption.innerHTML = employerName;
+      employerSelectionDropdown.appendChild(newEmployerOption);
+    }
+
+    // clear fields for the selected employer
+  });
 }
 
 window.addEventListener("load", function () {
-
   const whichDayButtons = document.querySelectorAll(
     'input[type="radio"][name="whichDay"]'
   );
