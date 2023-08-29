@@ -116,17 +116,17 @@
           </div>
 
           <div>
-            <p>Select which day you would like to see</p>
+            <h1>Select which day you would like to see</h1>
 
             <div class="radio-holder">
               <div class="radio-container">
-                <label for="option1">Day 1: Wednesday, September 6th</label>
                 <input type="radio" id="day1" name="whichDay" value="1" />
+                <label for="option1">Day 1: Wednesday, September 6th</label>
               </div>
 
               <div class="radio-container">
-                <label for="option2">Day 2: Thursday, September 7th</label>
                 <input type="radio" id="day2" name="whichDay" value="2" />
+                <label for="option2">Day 2: Thursday, September 7th</label>
               </div>
             </div>
           </div>
@@ -136,21 +136,31 @@
           <h1>Employer Information</h1>
 
           <label id="employerSelectionLabel" for="employers"
-            >Day X Employers (Select a day above)
+            >Day X Employers
           </label>
 
           <br />
-          <select name="employers" id="employerSelectionDropdown"></select>
+          <select name="employers" id="employerSelectionDropdown">
+            <option value="">Select a day above</option>
+          </select>
 
-          <h2>Accenture</h2>
-          <h3>Booth</h3>
-          <p>507</p>
-          <h3>Industry</h3>
-          <p>Consulting</p>
-          <h3>Majors Recruited</h3>
-          <p>All majors</p>
-          <h3>Position types</h3>
-          <p>Internship</p>
+          <div id="employerInformationDiv" style="display: none">
+            <h2 id="companyName">CompanyName</h2>
+            <h3>Booth(s)</h3>
+            <p id="boothNumbers">312</p>
+            <h3>Industry</h3>
+            <p id="companyIndustry">CompanyIndustry</p>
+            <h3>Majors Recruited</h3>
+            <p id="companyMajorsRecruited">All majors</p>
+            <h3>Position types</h3>
+            <p id="companyPositionTypesRecruited">Internship</p>
+            <h3>Degree Levels Recruited</h3>
+            <p id="companyDegreeLevelsRecruited"></p>
+            <h3>Website</h3>
+            <a id="companySiteLink" href="http://www.example.com"
+              >http://www.example.com</a
+            >
+          </div>
         </div>
       </div>
     </div>

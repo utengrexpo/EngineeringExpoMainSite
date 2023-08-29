@@ -75,7 +75,7 @@ img {
 }
 
 #highlight2 {
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(50, 200, 50, 0.55);
 }
 
 .zoomAndCenterContainer {
@@ -115,3 +115,7 @@ img {
   display: inline-block;
 }
 
+input[type="radio"] {
+  transform: scale(1.5);
+  margin-right: 20px;
+}
