@@ -99,6 +99,8 @@ window.addEventListener("load", function () {
     .addEventListener("mouseleave", function () {
       highlight1.style.display = "none";
     });
+
+  updateDay(1);
 });
 
 const slider = document.getElementById("myZoom");
@@ -137,7 +139,11 @@ async function populateEmployerData(whichDay) {
 
 const boothNumberToEmployerName = new Object();
 
+let currentDay = null;
+
 function updateDay(whichDay) {
+  currentDay = whichDay;
+  highlight2.style.display = "none";
   populateEmployerData(whichDay).then(() => {
     // update dropdown label
     const message = `Select from Day ${whichDay} Employers`;
@@ -204,7 +210,8 @@ const employerSelectionDropdown = document.getElementById(
 function updateEmployerDataBasedOnDropdownSelected() {
   // find which employer was selected
   const selectedEmployer = employerSelectionDropdown.value;
-  const relevantEmployerData = day1EmployerData[selectedEmployer];
+  const whichDayData = currentDay == 1 ? day1EmployerData : day2EmployerData;
+  const relevantEmployerData = whichDayData[selectedEmployer];
 
   // find the booth number
   const correctBoothRelatedKey =
@@ -251,6 +258,10 @@ employerSelectionDropdown.addEventListener(
   updateEmployerDataBasedOnDropdownSelected
 );
 
+function indicateNoEmployerAssignedToBooth(boothNumber) {
+  alert(`No Employer Assigned To Booth ${boothNumber}!`);
+}
+
 highlight1.addEventListener("click", function () {
   const boothNumber = highlight1.getAttribute("boothNumber");
   const employerName = boothNumberToEmployerName[boothNumber];
@@ -260,7 +271,7 @@ highlight1.addEventListener("click", function () {
     employerSelectionDropdown.options
   ).find((option) => option.value == employerName);
   if (!employerOptionToSelect) {
-    console.error("unable to find the employer for the area selected");
+    indicateNoEmployerAssignedToBooth(boothNumber);
   }
   employerOptionToSelect.selected = true;
   updateEmployerDataBasedOnDropdownSelected();
