@@ -1,0 +1,121 @@
+/* Style for the highlighted areas */
+:root {
+  --left-percentage: 60%;
+  --very-pale-yellow: #ffebdc;
+  --burnt-orange: #bf5700;
+  --light-orange: #f8971f;
+  --map-zoom: 0.2;
+}
+
+.split {
+  z-index: 1;
+  height: 80vh;
+  overflow: auto;
+  position: relative;
+}
+
+.left {
+  width: var(--left-percentage);
+  position: relative;
+  left: 0;
+  overflow: auto;
+}
+
+.left img,
+.left map {
+  transform: scale(var(--map-zoom));
+  transition: transform 0.3s ease;
+  clear: both;
+}
+
+.right {
+  width: calc(100% - var(--left-percentage));
+  right: 0;
+  background-color: var(--very-pale-yellow);
+  color: black;
+}
+
+.map_container {
+  display: flex;
+  clear: both;
+}
+
+img {
+  max-width: none !important;
+}
+
+.slider {
+  width: 100%;
+  -webkit-appearance: none;
+  background: white;
+  opacity: 0.7;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: black;
+  cursor: pointer;
+}
+
+.radio-container {
+  margin-top: 10px;
+}
+.highlighted {
+  /* Semi-transparent red */
+  position: absolute;
+  z-index: 2;
+  clear: both;
+}
+
+#highlight1 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#highlight2 {
+  background-color: rgba(50, 200, 50, 0.55);
+}
+
+.zoomAndCenterContainer {
+  display: flex;
+}
+
+.recenterButtonDiv {
+  margin-left: 40px;
+  display: flex;
+}
+
+.zoomAndCenterContainer button {
+  background-color: var(--light-orange);
+  border: none;
+  padding: 1px 15px;
+  border-radius: 20px;
+}
+
+.zoomAndCenterContainer button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.toprow {
+  color: white;
+  padding: 30px;
+  background-color: var(--burnt-orange);
+}
+
+.right h1 {
+  font-size: 20px;
+}
+
+.bottomrow {
+  padding: 30px;
+  display: inline-block;
+}
+
+input[type="radio"] {
+  transform: scale(1.5);
+  margin-right: 20px;
+}
