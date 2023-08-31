@@ -18,10 +18,6 @@ function scrollToCenter() {
   document.documentElement.style.setProperty("--map-zoom", 0.2);
 }
 
-// scroll to center on load
-window.addEventListener("load", function () {
-  scrollToCenter();
-});
 
 function updateAreaAttributes(newArea, coordinates, boothNumber) {
   newArea.setAttribute("shape", "rect");
@@ -101,6 +97,9 @@ window.addEventListener("load", function () {
     });
 
   updateDay(1);
+
+  scrollToCenter();
+
 });
 
 const slider = document.getElementById("myZoom");
