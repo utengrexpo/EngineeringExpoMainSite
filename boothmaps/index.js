@@ -90,6 +90,11 @@ window.addEventListener("load", function () {
       console.error("Error reading in booth coordinates:", error);
     });
 
+    if (!this.sessionStorage.getItem('pageReloaded')){
+      this.sessionStorage.setItem("pageReloaded", "true");
+      this.location.reload();
+    }
+
   document
     .getElementById("scrollableMapContainer")
     .addEventListener("mouseleave", function () {
