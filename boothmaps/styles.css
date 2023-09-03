@@ -38,6 +38,10 @@
   display: flex;
   overflow: hidden;
   clear: both;
+  position: relative;
+  top: 5.5px;
+  background-color: white;
+  z-index: 3;
 }
 
 img {
