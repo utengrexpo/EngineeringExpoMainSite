@@ -287,24 +287,35 @@ highlight1.addEventListener("click", function () {
 });
 
 
-function makeFooterResponsive(){
-
+function makeFooterResponsive(portrait = true) {
   var windowWidth = window.innerWidth;
-
-  // Check the screen size based on the width
-  if (windowWidth < 768) {
-    
-      //   // Get the element by its id
-      var divFooter = document.getElementById('footer-part');
-
-      var divElementRightAreaPanel = document.getElementById('right-area-panel');
-
-      var divHeightRightArea = divElementRightAreaPanel.clientHeight; 
+  var divFooter = document.getElementById('footer-part');
+  var divElementRightAreaPanel = document.getElementById('right-area-panel');
   
-  
+  // Check if divFooter exists
+
+    var divHeightRightArea = divElementRightAreaPanel.clientHeight;
+    // Check the screen size based on the width
+    if ((windowWidth < 768) && portrait) {
       // Set the height of the element
       divFooter.style.marginTop = divHeightRightArea + 'px';
-  }
-}
+    } else {
+      divFooter.style.marginTop = 0;
+    }
+  
+};
+
+let portrait = window.matchMedia("(orientation: portrait)");
+
+portrait.addEventListener("change", function(e) {
+    if(e.matches) {
+        // Portrait mode
+        makeFooterResponsive()
+        
+    } else {
+        // Landscape
+        makeFooterResponsive(false)
+    }
+})
 
 makeFooterResponsive()
