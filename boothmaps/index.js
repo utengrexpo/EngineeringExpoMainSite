@@ -255,6 +255,9 @@ function updateEmployerDataBasedOnDropdownSelected() {
   const companySiteLink = document.getElementById("companySiteLink");
   companySiteLink.setAttribute("href", relevantEmployerData["Website"]);
   companySiteLink.setAttribute("target", "_blank");
+
+  // adjust the footer
+  // makeFooterResponsive();
 }
 
 employerSelectionDropdown.addEventListener(
@@ -279,21 +282,37 @@ highlight1.addEventListener("click", function () {
   }
   employerOptionToSelect.selected = true;
   updateEmployerDataBasedOnDropdownSelected();
+
+  // makeFooterResponsive();
 });
 
 
 function makeFooterResponsive(){
 
-    // Get the element by its id
-  var divElement = document.getElementById('right-area-panel');
+  var windowWidth = window.innerWidth;
 
-  // Get the clientHeight property to retrieve the height
-  var divHeight = divElement.clientHeight;
+  // Check the screen size based on the width
+  if (windowWidth < 768) {
+      // Small screen (e.g., mobile devices)
+      // Get the element by its id
+      var divElement = document.getElementById('right-area-panel_bottom-row');
 
-  // Log the height to the console (remove this line if not needed)
-  console.log('The height of the div is: ' + divHeight);
-
-
+      // Get the clientHeight property to retrieve the height
+      var divHeight = divElement.clientHeight - 120;
+      
+      // Log the height to the console (remove this line if not needed)
+      console.log('The height of the div is: ' + divHeight);
+    
+        // Get the element by its id
+      var divFooter = document.getElementById('footer-part');
+    
+      var divFooterHeight = divFooter.offsetHeight;
+    
+      console.log('The height of the footer is: ' + divFooterHeight);
+    
+      // Set the height of the element
+      divFooter.style.marginTop = divHeight + 'px';
+  }
 }
 
-makeFooterResponsive()
+// makeFooterResponsive()

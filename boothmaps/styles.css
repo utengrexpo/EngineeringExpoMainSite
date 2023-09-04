@@ -12,11 +12,12 @@
   width: var(--left-percentage);
   position: relative;
   left: 0;
-  overflow: auto;
+}
+
+.left, .right {
   height: 80vh;
   overflow: auto;
 }
-
 .left img,
 .left map {
   transform: scale(var(--map-zoom));
@@ -37,7 +38,7 @@
   display: flex;
   clear: both;
   position: relative;
-  min-height: 115vh;
+  /* min-height: 115vh; */
 }
 
 img {
@@ -72,10 +73,12 @@ img {
 
 #highlight1 {
   background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
 }
 
 #highlight2 {
   background-color: rgba(50, 200, 50, 0.55);
+  z-index: 0;
 }
 
 .zoomAndCenterContainer {
@@ -126,7 +129,9 @@ input[type="radio"] {
 
 #employerSelectionDropdown{
   max-width: 80%;
+  margin-top: 10px;
 }
+
 
 
 @media only screen and (max-width: 600px) {
@@ -135,31 +140,26 @@ input[type="radio"] {
   }
 
   .right{
-    /* display: none; */
     width: 100%;
     position: absolute;
     bottom: 0;
     top: 50%;
     min-height: fit-content;
-    /* height: 30vh; */
+
   }
 
   .bottom-mobile-responsiveness {
     display: none;
-    /* height: 30vh;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #bf5700;
-    width: 100% !important;
-    padding: 20px;
-    z-index: 20; */
+
   }
 
   .bottomrow{
-    padding: 20px;
+    padding: 20px 20px 50px;
     display: block;
+  }
+
+  #footer-part{
+    margin-top: 290px;
   }
 
 }
