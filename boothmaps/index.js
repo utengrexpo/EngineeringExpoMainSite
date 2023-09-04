@@ -255,6 +255,9 @@ function updateEmployerDataBasedOnDropdownSelected() {
   const companySiteLink = document.getElementById("companySiteLink");
   companySiteLink.setAttribute("href", relevantEmployerData["Website"]);
   companySiteLink.setAttribute("target", "_blank");
+
+  // adjust the footer
+  makeFooterResponsive();
 }
 
 employerSelectionDropdown.addEventListener(
@@ -279,4 +282,40 @@ highlight1.addEventListener("click", function () {
   }
   employerOptionToSelect.selected = true;
   updateEmployerDataBasedOnDropdownSelected();
+
+  makeFooterResponsive();
 });
+
+
+function makeFooterResponsive(portrait = true) {
+  var windowWidth = window.innerWidth;
+  var divFooter = document.getElementById('footer-part');
+  var divElementRightAreaPanel = document.getElementById('right-area-panel');
+  
+  // Check if divFooter exists
+
+    var divHeightRightArea = divElementRightAreaPanel.clientHeight;
+    // Check the screen size based on the width
+    if ((windowWidth < 768) && portrait) {
+      // Set the height of the element
+      divFooter.style.marginTop = divHeightRightArea + 'px';
+    } else {
+      divFooter.style.marginTop = 0;
+    }
+  
+};
+
+let portrait = window.matchMedia("(orientation: portrait)");
+
+portrait.addEventListener("change", function(e) {
+    if(e.matches) {
+        // Portrait mode
+        makeFooterResponsive()
+        
+    } else {
+        // Landscape
+        makeFooterResponsive(false)
+    }
+})
+
+makeFooterResponsive()
