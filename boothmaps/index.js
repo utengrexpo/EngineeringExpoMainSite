@@ -280,3 +280,20 @@ highlight1.addEventListener("click", function () {
   employerOptionToSelect.selected = true;
   updateEmployerDataBasedOnDropdownSelected();
 });
+
+
+function makeFooterResponsive(){
+
+    // Get the element by its id
+  var divElement = document.getElementById('right-area-panel');
+
+  // Get the clientHeight property to retrieve the height
+  var divHeight = divElement.clientHeight;
+
+  // Log the height to the console (remove this line if not needed)
+  console.log('The height of the div is: ' + divHeight);
+
+
+}
+
+makeFooterResponsive()

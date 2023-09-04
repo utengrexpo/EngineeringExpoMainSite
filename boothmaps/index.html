@@ -91,7 +91,7 @@
         <map name="image-map"> </map>
       </div>
 
-      <div class="split right">
+      <div class="right split" id = "right-area-panel">
         <div class="toprow">
           <h1>Expo Booth Map Tool</h1>
 
@@ -170,65 +170,6 @@
         </div>
       </div>
 
-      <div class = "bottom-mobile-responsiveness">
-
-        <div class = "top-row">
-          <div class="recenterButtonDiv">
-            <button onclick="scrollToCenter()">Recenter Map</button>
-          </div>
-    
-          <div>
-            <h1>Select which day you would like to see</h1>
-    
-            <div class="radio-holder">
-              <div class="radio-container">
-                <input
-                  type="radio"
-                  id="day1"
-                  name="whichDay"
-                  value="1"
-                  checked
-                />
-                <label for="option1">Day 1: Wednesday, September 6th</label>
-              </div>
-    
-              <div class="radio-container">
-                <input type="radio" id="day2" name="whichDay" value="2" />
-                <label for="option2">Day 2: Thursday, September 7th</label>
-              </div>
-            </div>
-    
-          </div>
-        </div>
-    
-        <div class="bottom-row">
-          <h1>Employer Information</h1>
-  
-          <label id="employerSelectionLabel" for="employers">Select from Day 1 Employers</label>
-  
-          <br>
-          <select name="employers" id="employerSelectionDropdown"><option>Select an employer</option><option value="Accenture">Accenture</option><option value="AECOM">AECOM</option><option value="Aguirre &amp; Fields, LP">Aguirre &amp; Fields, LP</option><option value="Analog Devices">Analog Devices</option><option value="ANS Geo">ANS Geo</option><option value="Antea Group">Antea Group</option><option value="Applied Research Laboratories">Applied Research Laboratories</option><option value="Archer Western a member of The Walsh Group">Archer Western a member of The Walsh Group</option><option value="ARCO/Murray">ARCO/Murray</option><option value="Arm, Inc.">Arm, Inc.</option><option value="Ascend Performance Materials">Ascend Performance Materials</option><option value="Atkins, member of the SNC-Lavalin Group">Atkins, member of the SNC-Lavalin Group</option><option value="Atwell, LLC">Atwell, LLC</option><option value="Austin Commercial">Austin Commercial</option><option value="Baird, Hampton &amp; Brown">Baird, Hampton &amp; Brown</option><option value="Baker Concrete Construction">Baker Concrete Construction</option><option value="BASF Corporation">BASF Corporation</option><option value="BGE, Inc">BGE, Inc</option><option value="BOE Consulting Services, LLC">BOE Consulting Services, LLC</option><option value="Bowman">Bowman</option><option value="bp">bp</option><option value="Breakwater Forensics LLC">Breakwater Forensics LLC</option><option value="Brockette/Davis/Drake, Inc">Brockette/Davis/Drake, Inc</option><option value="Burns &amp; McDonnell">Burns &amp; McDonnell</option><option value="CACI - Houston">CACI - Houston</option><option value="Campos Engineering, Inc.">Campos Engineering, Inc.</option><option value="CDM Smith">CDM Smith</option><option value="CenterPoint Energy">CenterPoint Energy</option><option value="CesiumAstro">CesiumAstro</option><option value="Chevron Corporation">Chevron Corporation</option><option value="Chevron Phillips Chemical Company LP">Chevron Phillips Chemical Company LP</option><option value="Childress Engineering Services">Childress Engineering Services</option><option value="Cirrus Logic, Inc.">Cirrus Logic, Inc.</option><option value="Civil &amp; Environmental Consultants, Inc. (CEC)">Civil &amp; Environmental Consultants, Inc. (CEC)</option><option value="Civilitude">Civilitude</option><option value="Cobb, Fendley &amp; Associates, Inc.">Cobb, Fendley &amp; Associates, Inc.</option><option value="Confluent Medical Technology">Confluent Medical Technology</option><option value="ConocoPhillips">ConocoPhillips</option><option value="Consor Engineers">Consor Engineers</option><option value="Corning Incorporated">Corning Incorporated</option><option value="Cox Enterprises">Cox Enterprises</option><option value="Crescent Systems, Inc.">Crescent Systems, Inc.</option><option value="Criado and Associates">Criado and Associates</option><option value="Dell">Dell</option><option value="Diamondback Energy">Diamondback Energy</option><option value="Dolby">Dolby</option><option value="Dow Inc.">Dow Inc.</option><option value="DPR Construction">DPR Construction</option><option value="Dril-Quip Inc.">Dril-Quip Inc.</option><option value="DUDLEY">DUDLEY</option><option value="Dun &amp; Bradstreet">Dun &amp; Bradstreet</option><option value="Dunaway Associates">Dunaway Associates</option><option value="EControls">EControls</option><option value="EDGE Engineering PLLC">EDGE Engineering PLLC</option><option value="EEA Consulting Engineers">EEA Consulting Engineers</option><option value="Emergent Space Technologies">Emergent Space Technologies</option><option value="Emerson">Emerson</option><option value="Endeavor Energy Resources">Endeavor Energy Resources</option><option value="Enerflex">Enerflex</option><option value="Epic">Epic</option><option value="ExxonMobil">ExxonMobil</option><option value="Federal Aviation Administration - CSA Engineering Services">Federal Aviation Administration - CSA Engineering Services</option><option value="Firefly Aerospace">Firefly Aerospace</option><option value="Flatiron Construction">Flatiron Construction</option><option value="Forensic Engineering Company">Forensic Engineering Company</option><option value="Forgen">Forgen</option><option value="Freese and Nichols, Inc.">Freese and Nichols, Inc.</option><option value="Garver">Garver</option><option value="GBA">GBA</option><option value="Gilbane Building Company">Gilbane Building Company</option><option value="Great Lakes Dredge &amp; Dock">Great Lakes Dredge &amp; Dock</option><option value="Halff">Halff</option><option value="Harvey-Cleary Builders">Harvey-Cleary Builders</option><option value="HDR, Inc.">HDR, Inc.</option><option value="Henderson Engineers">Henderson Engineers</option><option value="Hensel Phelps Construction Company">Hensel Phelps Construction Company</option><option value="Hess Corporation">Hess Corporation</option><option value="Hewlett Packard Enterprise">Hewlett Packard Enterprise</option><option value="HNTB Corporation">HNTB Corporation</option><option value="Holland &amp; Hart">Holland &amp; Hart</option><option value="Honeywell">Honeywell</option><option value="HTS Texas">HTS Texas</option><option value="Indorama Ventures">Indorama Ventures</option><option value="INEOS Olefins &amp; Polymers USA">INEOS Olefins &amp; Polymers USA</option><option value="Jacobs">Jacobs</option><option value="JE Dunn Construction">JE Dunn Construction</option><option value="John Deere">John Deere</option><option value="Johnson &amp; Johnson">Johnson &amp; Johnson</option><option value="JQ Engineering, LLP">JQ Engineering, LLP</option><option value="KBR (Kellogg Brown &amp; Root)">KBR (Kellogg Brown &amp; Root)</option><option value="Keller North America, Inc.">Keller North America, Inc.</option><option value="Keurig Dr Pepper">Keurig Dr Pepper</option><option value="Kiewit">Kiewit</option><option value="Kimley-Horn &amp; Associates Inc">Kimley-Horn &amp; Associates Inc</option><option value="Kitchell Contractors, Inc.">Kitchell Contractors, Inc.</option><option value="Kongsberg Digital Inc.">Kongsberg Digital Inc.</option><option value="L3Harris Technologies">L3Harris Technologies</option><option value="Lam Research">Lam Research</option><option value="Level 10 Construction">Level 10 Construction</option><option value="LOCKHEED MARTIN">LOCKHEED MARTIN</option><option value="LPL Financial">LPL Financial</option><option value="Lutron Electronics">Lutron Electronics</option><option value="Mahoney Engineering">Mahoney Engineering</option><option value="Matador Resources">Matador Resources</option><option value="MC Squared, LLC">MC Squared, LLC</option><option value="McCarthy Building Companies">McCarthy Building Companies</option><option value="Medpace">Medpace</option><option value="Metropolitan Contracting Company">Metropolitan Contracting Company</option><option value="Michael Baker International">Michael Baker International</option><option value="Micron">Micron</option><option value="MIT Lincoln Laboratory">MIT Lincoln Laboratory</option><option value="National Instruments (NI)">National Instruments (NI)</option><option value="Naval Nuclear Laboratory">Naval Nuclear Laboratory</option><option value="Niagara Bottling, LLC.">Niagara Bottling, LLC.</option><option value="NOV">NOV</option><option value="NRG Energy">NRG Energy</option><option value="O'Connell Robertson">O'Connell Robertson</option><option value="Odyssey Space Research">Odyssey Space Research</option><option value="Oxy">Oxy</option><option value="Pape-Dawson Engineers">Pape-Dawson Engineers</option><option value="Pattern Bioscience">Pattern Bioscience</option><option value="Peloton Computer Enterprises, Inc.">Peloton Computer Enterprises, Inc.</option><option value="PepsiCo">PepsiCo</option><option value="Pillsbury Winthrop Shaw Pittman">Pillsbury Winthrop Shaw Pittman</option><option value="Pioneer Natural Resources">Pioneer Natural Resources</option><option value="Plummer">Plummer</option><option value="Ponce-Fuess Engineering, LLC">Ponce-Fuess Engineering, LLC</option><option value="POWER Engineers">POWER Engineers</option><option value="PricewaterhouseCoopers, LLP">PricewaterhouseCoopers, LLP</option><option value="Procter &amp; Gamble">Procter &amp; Gamble</option><option value="Quiddity">Quiddity</option><option value="Qvest.US">Qvest.US</option><option value="rand* construction corporation">rand* construction corporation</option><option value="Raytheon Technologies">Raytheon Technologies</option><option value="Relativity Space">Relativity Space</option><option value="Rogers-O'Brien Construction">Rogers-O'Brien Construction</option><option value="SAIC">SAIC</option><option value="Salas O'Brien, Inc.">Salas O'Brien, Inc.</option><option value="Samsung Austin Semiconductor">Samsung Austin Semiconductor</option><option value="Sandia National Labs">Sandia National Labs</option><option value="ServiceNow">ServiceNow</option><option value="Shell USA, Inc.">Shell USA, Inc.</option><option value="Silicon Labs">Silicon Labs</option><option value="Skyworks Solutions">Skyworks Solutions</option><option value="SLB">SLB</option><option value="Solar Turbines">Solar Turbines</option><option value="Southwest Research Institute">Southwest Research Institute</option><option value="Sparx Engineering">Sparx Engineering</option><option value="Spire Consulting Group">Spire Consulting Group</option><option value="Stacy and Witbeck">Stacy and Witbeck</option><option value="Steger &amp; Bizzell Engineering">Steger &amp; Bizzell Engineering</option><option value="Structural Engineering Associates, Inc.">Structural Engineering Associates, Inc.</option><option value="Stryker">Stryker</option><option value="STV">STV</option><option value="SunPower Corporation">SunPower Corporation</option><option value="Synopsys">Synopsys</option><option value="TechnipFMC">TechnipFMC</option><option value="Tenaris">Tenaris</option><option value="Terracon">Terracon</option><option value="Tesla Motors">Tesla Motors</option><option value="Texas Commision on Environmental Quality">Texas Commision on Environmental Quality</option><option value="Texas Department of Transportation">Texas Department of Transportation</option><option value="Texas Instruments (TI)">Texas Instruments (TI)</option><option value="The Cigna Group">The Cigna Group</option><option value="The Johns Hopkins University Applied Physics Laboratory">The Johns Hopkins University Applied Physics Laboratory</option><option value="The Rios Group, Inc.">The Rios Group, Inc.</option><option value="Tokyo Electron (TEL)">Tokyo Electron (TEL)</option><option value="Torc Robotics">Torc Robotics</option><option value="Tower Semiconductor">Tower Semiconductor</option><option value="Traylor Bros., Inc.">Traylor Bros., Inc.</option><option value="Trihydro Corp">Trihydro Corp</option><option value="Truebeck Construction">Truebeck Construction</option><option value="Tsen Engineering">Tsen Engineering</option><option value="U.S. Navy">U.S. Navy</option><option value="United Airlines">United Airlines</option><option value="Urban Infraconstruction">Urban Infraconstruction</option><option value="Valero Energy Corporation">Valero Energy Corporation</option><option value="VEX Robotics">VEX Robotics</option><option value="Wade Trim">Wade Trim</option><option value="Walker Partners">Walker Partners</option><option value="Wells Fargo">Wells Fargo</option><option value="WGA Consulting Engineers">WGA Consulting Engineers</option><option value="Wylie Engineering">Wylie Engineering</option><option value="Yalgo Engineering, LLC">Yalgo Engineering, LLC</option></select>
-  
-          <div id="employerInformationDiv" style="display: inline-block;">
-            <h2 id="companyName">Campos Engineering,  Inc.</h2>
-            <h3>Booth(s)</h3>
-            <p id="boothNumbers">111</p>
-            <h3>Industry</h3>
-            <p id="companyIndustry">Construction &amp; Building Trades, Consulting, Energy &amp; Environmental Resources, Engineering</p>
-            <h3>Majors Recruited</h3>
-            <p id="companyMajorsRecruited">Electrical and Computer, Mechanical</p>
-            <h3>Position types</h3>
-            <p id="companyPositionTypesRecruited">Full Time, Internship, Co-Op, Part Time</p>
-            <h3>Degree Levels Recruited</h3>
-            <p id="companyDegreeLevelsRecruited">Bachelors, Masters</p>
-            <h3>Website</h3>
-            <a id="companySiteLink" href="https://www.camposengineering.com" target="_blank">https://www.camposengineering.com</a>
-          </div>
-        </div>
-  
-  
-  
-      </div>
 
     </div>
 
