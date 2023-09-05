@@ -1,5 +1,5 @@
 document.write('\
-<div class="footer">\
+<div class="footer" id = "footer-part">\
     <a href="/additional-links" class="footer-link align-left">ADDITIONAL LINKS</a>\
     <a href="/faq" class="footer-link align-center">FAQ</a>\
     <a href="/about" class="footer-link align-right">ABOUT US</a>\

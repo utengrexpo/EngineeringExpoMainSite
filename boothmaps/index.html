@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-139128421-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-139128421-1");
+    </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("theTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <title>Employer Booth Maps - Expo - Cockrell School of Engineering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Description"
+      content="Interactive Employer Booth Maps for day one and day two for students to look at where employers are placed."
+    />
+    <link rel="icon" href="/images2023/Expo_Logo_2023.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/normalize.css@8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+      integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/styles/style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .ut-menu-right .pure-menu-has-children > .pure-menu-link:after {
+        content: "\25B8";
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- The header and topnav section that remains the same -->
+    <div>
+      <script src="../header.js"></script>
+      <a href="/"
+        ><img
+          class="logo"
+          src="/images2023/Expo_Logo_2023.png"
+          alt="The 2021 Expo logo"
+      /></a>
+    </div>
+
+    <!-- Our map related elements  -->
+    <div class="map_container">
+      <div id="scrollableMapContainer" class="split left dragscroll">
+        <!-- The image with an associated image map -->
+        <div>
+          <img
+            src="2023UTFallEngineeringExpoMap.png"
+            alt="Image with clickable areas"
+            usemap="#image-map"
+            id="mapimage"
+          />
+          <div id="highlight1" class="highlighted"></div>
+          <div id="highlight2" class="highlighted"></div>
+        </div>
+
+        <!-- The image map definition -->
+        <map name="image-map"> </map>
+      </div>
+
+      <div class="right split" id = "right-area-panel">
+        <div class="toprow">
+          <h1>Expo Booth Map Tool</h1>
+
+          <div class="zoomAndCenterContainer">
+            <div class="slidecontainer">
+              <p>Drag the map to pan and adjust zoom by using the slider</p>
+              <input
+                type="range"
+                min="0.2"
+                max="1.5"
+                step="0.05"
+                value="0.2"
+                class="slider"
+                id="myZoom"
+              />
+              <!-- if you change the initial value please change css value -->
+            </div>
+
+            <div class="recenterButtonDiv">
+              <button onclick="scrollToCenter()">Recenter Map</button>
+            </div>
+          </div>
+
+          <div>
+            <h1>Select which day you would like to see</h1>
+
+            <div class="radio-holder">
+              <div class="radio-container">
+                <input
+                  type="radio"
+                  id="day1"
+                  name="whichDay"
+                  value="1"
+                  checked
+                />
+                <label for="option1">Day 1: Wednesday, September 6th</label>
+              </div>
+
+              <div class="radio-container">
+                <input type="radio" id="day2" name="whichDay" value="2" />
+                <label for="option2">Day 2: Thursday, September 7th</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottomrow" id = "right-area-panel_bottom-row">
+          <h1>Employer Information</h1>
+
+          <label id="employerSelectionLabel" for="employers"
+            >Day X Employers
+          </label>
+
+          <br />
+          <select name="employers" id="employerSelectionDropdown">
+            <option value="">Select a day above</option>
+          </select>
+
+          <div id="employerInformationDiv" style="display: none">
+            <h2 id="companyName">CompanyName</h2>
+            <h3>Booth(s)</h3>
+            <p id="boothNumbers">312</p>
+            <h3>Industry</h3>
+            <p id="companyIndustry">CompanyIndustry</p>
+            <h3>Majors Recruited</h3>
+            <p id="companyMajorsRecruited">All majors</p>
+            <h3>Position types</h3>
+            <p id="companyPositionTypesRecruited">Internship</p>
+            <h3>Degree Levels Recruited</h3>
+            <p id="companyDegreeLevelsRecruited"></p>
+            <h3>Website</h3>
+            <a id="companySiteLink" href="http://www.example.com"
+              >http://www.example.com</a
+            >
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+ 
+
+
+
+    <!-- The footer stuff -->
+    <div>
+      <script src="/footer.js"></script>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/asvd/dragscroll/dragscroll.min.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
