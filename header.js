@@ -9,7 +9,7 @@ document.write('\
 <a href="/corporate/schedule">Schedule</a>  \
 <a href="/student/senior-reception">Senior Reception</a>    \
 <a href="/project">Expo Service Project</a>          \
-<a href="/">Activity</a>                             \
+<a href="/PageTemplate.html">Activity</a>                             \
 <a href="/faq">FAQ</a>                  \
 <a href="/about">About Us</a>           \
 <a href="/additional-links">Additional Links</a>            \
