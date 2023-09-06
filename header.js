@@ -12,7 +12,6 @@ document.write('\
 <a href="/activity">Activity</a>                             \
 <a href="/faq">FAQ</a>                  \
 <a href="/about">About Us</a>           \
-<a href="/additional-links">Additional Links</a>            \
 <a href="javascript:void(0);" class="icon" onclick="myFunction()">  \
     <i class="fa fa-bars"></i>          \
 </a>                                    \

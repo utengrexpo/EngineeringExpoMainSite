@@ -1,5 +1,5 @@
 document.write('\
-<div class="footer">\
+<div class="footer" id = "footer-part">\
     <a href="/additional-links" class="footer-link align-left">ADDITIONAL LINKS</a>\
     <a href="/faq" class="footer-link align-center">FAQ</a>\
     <a href="/about" class="footer-link align-right">ABOUT US</a>\
@@ -14,7 +14,7 @@ document.write('\
                 alt="An icon of an envelope."></a>\
             <a href="https://www.facebook.com/UTENGREXPO/" target="_blank" class="external"><img\
                 style="width: 50px;" src="/images2020/facebook-icon-white.png" alt="White Facebook logo."></a>\
-            <a href="https://www.instagram.com/ut_engr_expo/" target="_blank" class="external"><img\
+            <a href="https://www.instagram.com/utengrexpo/" target="_blank" class="external"><img\
                 style="width: 50px; margin-left: 20px;" src="/images2020/instagram-icon-white.png"\
                 alt="White Instagram logo."></a>\
             <a href="https://www.linkedin.com/company/utengrexpo/" target="_blank" class="external"><img\

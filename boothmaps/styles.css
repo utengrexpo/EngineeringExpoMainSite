@@ -5,13 +5,7 @@
   --burnt-orange: #bf5700;
   --light-orange: #f8971f;
   --map-zoom: 0.2;
-}
-
-.split {
-  z-index: 1;
-  height: 80vh;
-  overflow: auto;
-  position: relative;
+  --top-percentage: 50%;
 }
 
 .left {
@@ -20,6 +14,10 @@
   left: 0;
 }
 
+.left, .right {
+  height: 80vh;
+  overflow: auto;
+}
 .left img,
 .left map {
   transform: scale(var(--map-zoom));
@@ -32,13 +30,15 @@
   right: 0;
   background-color: var(--very-pale-yellow);
   color: black;
+  position: relative;
+  z-index: 1;
 }
 
 .map_container {
   display: flex;
-  overflow: hidden;
   clear: both;
   position: relative;
+
   top: 5.5px;
   background-color: white;
   z-index: 3;
@@ -76,10 +76,12 @@ img {
 
 #highlight1 {
   background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
 }
 
 #highlight2 {
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(50, 200, 50, 0.55);
+  z-index: 0;
 }
 
 .zoomAndCenterContainer {
@@ -115,10 +117,49 @@ img {
 }
 
 .bottomrow {
-  padding: 30px;
-  display: inline-block;
+  padding: 20px 20px 50px;
+  display: block;
 }
 
-#scrollableMapContainer{
-  background-color: white;
+input[type="radio"] {
+  transform: scale(1.5);
+  margin-right: 20px;
+}
+
+.bottom-mobile-responsiveness{
+  display:none
+}
+
+#employerSelectionDropdown{
+  max-width: 80%;
+  margin-top: 10px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .left {
+    width: 100%;
+    height:30vh;
+  }
+
+  .right{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    top: 100%;
+    min-height: fit-content;
+
+  }
+
+  .bottom-mobile-responsiveness {
+    display: none;
+
+  }
+
+  .bottomrow{
+    padding: 20px 20px 50px;
+    display: block;
+  }
+
 }
