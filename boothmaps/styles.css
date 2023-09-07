@@ -39,6 +39,9 @@
   clear: both;
   position: relative;
 
+  top: 5.5px;
+  background-color: white;
+  z-index: 3;
 }
 
 img {
@@ -158,8 +161,5 @@ input[type="radio"] {
     padding: 20px 20px 50px;
     display: block;
   }
-
-
-
 
 }
