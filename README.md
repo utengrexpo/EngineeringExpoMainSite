@@ -12,6 +12,10 @@ You can use vscode to try changes in a local browser. Check this link out to fin
 
 Make sure you create a personal access token in order to gain local access and commit to a development branch (not master!) Only once successful changes are made, a pull request should be made, and the live site updated by pulling from master.
 
+## For Web Leads: How to pull changes from the Github:
+
+### First, read this: [Link text] https://docs.google.com/document/d/1gBJC-mDBm-wxpuaEwr6pxrHS0iY6tJJBA4C0Rah5K9U/edit
+
 To check to make sure you are on the right branch, type `git branch`. It should say `* dev` and not `* master`. If it says master, do `git checkout dev`
 
 On the utweb server, you may not be able to pull unless you update the .netrc file on your profile. Every user who wants to pull master and update live site must do this on the utweb server. When you are on the linux server through ssh, just paste the following command into the terminal: 
