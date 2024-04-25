@@ -4,7 +4,6 @@ document.write('\
 <a href="/" class="active">Home</a>     \
 <a href="/corporate">Corporate</a>      \
 <a href="/student">Student</a>          \
-<a href="/boothmaps">Booth Maps</a>          \
 <a href="/student/resources">Resources</a>  \
 <a href="/corporate/schedule">Schedule</a>  \
 <a href="/student/senior-reception">Senior Reception</a>    \
@@ -18,4 +17,5 @@ document.write('\
 </div>                                  \
 \
 ')
+//<a href="/boothmaps">Booth Maps</a>          \
 
