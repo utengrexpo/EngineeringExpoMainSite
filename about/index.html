@@ -41,7 +41,6 @@
 </head>
 
 <body>
-    <a href="/"><img class="logo" src="/images2023/Expo_Logo_2023.png" alt="The 2021 Expo logo"></a>
     <script src="../header.js"></script>
     
     <!--
@@ -63,33 +62,35 @@
 -->
 
     <div class="content-container text-align-center">
-        <h1 class="text-align-center">EXPO 2022 COMMITTEE</h1>
+        <h1 class="text-align-center">EXPO 2024 COMMITTEE</h1>
         <div class="profile-pic-container text-align-center">
             <h2>Expo Directors</h2>
             <div class="about-flex" id="directors"></div>
-
-            <h2>Expo Web and Publicity Committee</h2>
-
-            <div class="about-flex" id="pubweb1"></div>
-                    
-
-            <div class="about-flex" id="pubweb2"></div>
             
+            <br/>
+            <h2>Expo Administration Committee</h2>
+            
+            <div class="about-flex" id="admin1"></div>
+            <div class="about-flex" id="admin2"></div>
+
+            <br/>
+            <h2>Expo Events Committee</h2>
+            
+            <div class="about-flex" id="recep1"></div>
+            <div class="about-flex" id="recep2"></div>
+
+            <br/>
             <h2>Expo Operations Committee</h2>
             
             <div class="about-flex" id="ops1"></div>
-
             <div class="about-flex" id="ops2"></div>
+
+            <br/>
+            <h2>Expo Web and Publicity Committee</h2>
+
+            <div class="about-flex" id="pubweb1"></div>
+            <div class="about-flex" id="pubweb2"></div>
             
-            <h2>Expo Administration Committee</h2>
-            
-            <div class="about-flex" id="admin"></div>
-           
-            <h2>Senior Reception Committee</h2>
-            
-            <div class="about-flex" id="recep1"></div>
-            
-            <div class="about-flex" id="recep2"></div>
         
         </div>
     </div>
@@ -105,7 +106,8 @@
         var ops1 = document.getElementById("ops1");
         var ops2 = document.getElementById("ops2");
 
-        var admin = document.getElementById("admin");
+        var admin1 = document.getElementById("admin1");
+        // var admin2 = document.getElementById("admin2");
 
         var recep1 = document.getElementById("recep1");
         var recep2 = document.getElementById("recep2");
@@ -114,7 +116,7 @@
         for(var i = 0; i < 2; i++){
             innerText += "<div class='text-align-center'>\
                 <a href='" + linkedIn[0][i] + "' target='_blank'>\
-                <img src='" + path + files[0][i] + "' alt='portrait of Co-Director of 2020 Expo Committee' style='object-fit: cover; width: 250px; height: 300px;'>\
+                <img src='" + path + files[0][i] + "' alt='portrait of Co-Director of 2024 Expo Committee' style='object-fit: cover; width: 250px; height: 300px;'>\
                 </a>\
                 <p>" + names[0][i] + "</p>\
                 <p>" + major[0][i] + "</p>\
@@ -128,7 +130,7 @@
         for(var i = 0; i < 3; i++){
             innerText += "<div class='text-align-center'>\
                 <a href='" + linkedIn[1][i] + "' target='_blank'>\
-                <img src='" + path + files[1][i] + "' alt='portrait of Pub/Web Member of 2023 Expo Committee' style='object-fit: cover; width: 250px; height: 300px;'>\
+                <img src='" + path + files[1][i] + "' alt='portrait of Pub/Web Member of 2024 Expo Committee' style='object-fit: cover; width: 250px; height: 300px;'>\
                 </a>\
                 <p>" + names[1][i] + "</p>\
                 <p>" + major[1][i] + "</p>\
@@ -140,10 +142,10 @@
         pubweb1.innerHTML = innerText;
 
         innerText = "";
-        for(var i = 3; i < 6; i++){
+        for(var i = 3; i < 5; i++){
             innerText += "<div class='text-align-center'>\
                 <a href='" + linkedIn[1][i] + "' target='_blank'>\
-                <img src='" + path + files[1][i] + "' alt='portrait of Pub/Web Member of 2023 Expo Committee' style='object-fit: cover; width: 250px; height: 300px;'>\
+                <img src='" + path + files[1][i] + "' alt='portrait of Pub/Web Member of 2024 Expo Committee' style='object-fit: cover; width: 250px; height: 300px;'>\
                 </a>\
                 <p>" + names[1][i] + "</p>\
                 <p>" + major[1][i] + "</p>\
@@ -158,7 +160,7 @@
         for(var i = 0; i < 3; i++){
             innerText += "<div class='text-align-center'>\
                 <a href='" + linkedIn[4][i] + "' target='_blank'>\
-                <img src='" + path + files[4][i] + "' alt='portrait of Operations Member of 2023 Expo Committee' style='object-fit: cover; width: 250px; height: 300px;'>\
+                <img src='" + path + files[4][i] + "' alt='portrait of Operations Member of 2024 Expo Committee' style='object-fit: cover; width: 250px; height: 300px;'>\
                 </a>\
                 <p>" + names[4][i] + "</p>\
                 <p>" + major[4][i] + "</p>\
@@ -173,7 +175,7 @@
         for(var i = 3; i < 6; i++){
             innerText += "<div class='text-align-center'>\
                 <a href='" + linkedIn[4][i] + "' target='_blank'>\
-                <img src='" + path + files[4][i] + "' alt='portrait of Operations Member of 2023 Expo Committee' style='object-fit: cover; width: 250px; height: 300px;'>\
+                <img src='" + path + files[4][i] + "' alt='portrait of Operations Member of 2024 Expo Committee' style='object-fit: cover; width: 250px; height: 300px;'>\
                 </a>\
                 <p>" + names[4][i] + "</p>\
                 <p>" + major[4][i] + "</p>\
@@ -185,10 +187,10 @@
         ops2.innerHTML = innerText;
 
         innerText = "";
-        for(var i = 0; i < 4; i++){
+        for(var i = 0; i < 3; i++){
             innerText += "<div class='text-align-center'>\
                 <a href='" + linkedIn[2][i] + "' target='_blank'>\
-                <img src='" + path + files[2][i] + "' alt='portrait of Admin Member of 2023 Expo Committee'style='object-fit: cover; width: 250px; height: 300px;'>\
+                <img src='" + path + files[2][i] + "' alt='portrait of Admin Member of 2024 Expo Committee'style='object-fit: cover; width: 250px; height: 300px;'>\
                 </a>\
                 <p>" + names[2][i] + "</p>\
                 <p>" + major[2][i] + "</p>\
@@ -197,13 +199,28 @@
                 innerText += "\n";
         }
 
-        admin.innerHTML = innerText;
+        admin1.innerHTML = innerText;
+
+        innerText = "";
+        for(var i = 3; i < 5; i++){
+            innerText += "<div class='text-align-center'>\
+                <a href='" + linkedIn[2][i] + "' target='_blank'>\
+                <img src='" + path + files[2][i] + "' alt='portrait of Admin Member of 2024 Expo Committee'style='object-fit: cover; width: 250px; height: 300px;'>\
+                </a>\
+                <p>" + names[2][i] + "</p>\
+                <p>" + major[2][i] + "</p>\
+                </div>";
+
+                innerText += "\n";
+        }
+
+        admin2.innerHTML = innerText;
 
         innerText = "";
         for(var i = 0; i < 3; i++){
             innerText += "<div class='text-align-center'>\
                 <a href='" + linkedIn[3][i] + "' target='_blank'>\
-                <img src='" + path + files[3][i] + "' alt='portrait of Senior Reception Member of 2023 Expo Committee'style='object-fit: cover; width: 250px; height: 300px;'>\
+                <img src='" + path + files[3][i] + "' alt='portrait of Senior Reception Member of 2024 Expo Committee'style='object-fit: cover; width: 250px; height: 300px;'>\
                 </a>\
                 <p>" + names[3][i] + "</p>\
                 <p>" + major[3][i] + "</p>\
@@ -215,10 +232,10 @@
         recep1.innerHTML = innerText;
 
         innerText = "";
-        for(var i = 3; i < 5; i++){
+        for(var i = 3; i < 6; i++){
             innerText += "<div class='text-align-center'>\
                 <a href='" + linkedIn[3][i] + "' target='_blank'>\
-                <img src='" + path + files[3][i] + "' alt='portrait of Senior Reception Member of 2023 Expo Committee'style='object-fit: cover; width: 250px; height: 300px;'>\
+                <img src='" + path + files[3][i] + "' alt='portrait of Senior Reception Member of 2024 Expo Committee'style='object-fit: cover; width: 250px; height: 300px;'>\
                 </a>\
                 <p>" + names[3][i] + "</p>\
                 <p>" + major[3][i] + "</p>\

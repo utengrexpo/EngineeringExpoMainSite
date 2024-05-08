@@ -24,8 +24,8 @@ document.write('\
         <div style="width: 300px;" class="text-align-center">\
             <br>\
             <br>\
-            <p>\
-                Brandon Matthews and Audrey Leyva<br />\
+            <p style="width:400px">\
+                Sourish Wawdhane and Minh Quan Duong<br/>\
                 Cockrell School of Engineering<br />\
                 The University of Texas at Austin<br />\
                 <a href="mailto:expo@sec.engr.utexas.edu" target="_blank" class="external"\
