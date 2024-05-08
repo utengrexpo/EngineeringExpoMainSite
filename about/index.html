@@ -66,29 +66,31 @@
         <div class="profile-pic-container text-align-center">
             <h2>Expo Directors</h2>
             <div class="about-flex" id="directors"></div>
-
-            <h2>Expo Web and Publicity Committee</h2>
-
-            <div class="about-flex" id="pubweb1"></div>
-                    
-
-            <div class="about-flex" id="pubweb2"></div>
             
-            <h2>Expo Operations Committee</h2>
-            
-            <div class="about-flex" id="ops1"></div>
-
-            <div class="about-flex" id="ops2"></div>
-            
+            <br/>
             <h2>Expo Administration Committee</h2>
             
-            <div class="about-flex" id="admin"></div>
-           
+            <div class="about-flex" id="admin1"></div>
+            <div class="about-flex" id="admin2"></div>
+
+            <br/>
             <h2>Events Committee</h2>
             
             <div class="about-flex" id="recep1"></div>
-            
             <div class="about-flex" id="recep2"></div>
+
+            <br/>
+            <h2>Expo Operations Committee</h2>
+            
+            <div class="about-flex" id="ops1"></div>
+            <div class="about-flex" id="ops2"></div>
+
+            <br/>
+            <h2>Expo Web and Publicity Committee</h2>
+
+            <div class="about-flex" id="pubweb1"></div>
+            <div class="about-flex" id="pubweb2"></div>
+            
         
         </div>
     </div>
@@ -104,7 +106,8 @@
         var ops1 = document.getElementById("ops1");
         var ops2 = document.getElementById("ops2");
 
-        var admin = document.getElementById("admin");
+        var admin1 = document.getElementById("admin1");
+        // var admin2 = document.getElementById("admin2");
 
         var recep1 = document.getElementById("recep1");
         var recep2 = document.getElementById("recep2");
@@ -139,7 +142,7 @@
         pubweb1.innerHTML = innerText;
 
         innerText = "";
-        for(var i = 3; i < 6; i++){
+        for(var i = 3; i < 5; i++){
             innerText += "<div class='text-align-center'>\
                 <a href='" + linkedIn[1][i] + "' target='_blank'>\
                 <img src='" + path + files[1][i] + "' alt='portrait of Pub/Web Member of 2023 Expo Committee' style='object-fit: cover; width: 250px; height: 300px;'>\
@@ -184,7 +187,7 @@
         ops2.innerHTML = innerText;
 
         innerText = "";
-        for(var i = 0; i < 4; i++){
+        for(var i = 0; i < 3; i++){
             innerText += "<div class='text-align-center'>\
                 <a href='" + linkedIn[2][i] + "' target='_blank'>\
                 <img src='" + path + files[2][i] + "' alt='portrait of Admin Member of 2023 Expo Committee'style='object-fit: cover; width: 250px; height: 300px;'>\
@@ -196,7 +199,22 @@
                 innerText += "\n";
         }
 
-        admin.innerHTML = innerText;
+        admin1.innerHTML = innerText;
+
+        innerText = "";
+        for(var i = 3; i < 5; i++){
+            innerText += "<div class='text-align-center'>\
+                <a href='" + linkedIn[2][i] + "' target='_blank'>\
+                <img src='" + path + files[2][i] + "' alt='portrait of Admin Member of 2023 Expo Committee'style='object-fit: cover; width: 250px; height: 300px;'>\
+                </a>\
+                <p>" + names[2][i] + "</p>\
+                <p>" + major[2][i] + "</p>\
+                </div>";
+
+                innerText += "\n";
+        }
+
+        admin2.innerHTML = innerText;
 
         innerText = "";
         for(var i = 0; i < 3; i++){
@@ -214,7 +232,7 @@
         recep1.innerHTML = innerText;
 
         innerText = "";
-        for(var i = 3; i < 5; i++){
+        for(var i = 3; i < 6; i++){
             innerText += "<div class='text-align-center'>\
                 <a href='" + linkedIn[3][i] + "' target='_blank'>\
                 <img src='" + path + files[3][i] + "' alt='portrait of Senior Reception Member of 2023 Expo Committee'style='object-fit: cover; width: 250px; height: 300px;'>\

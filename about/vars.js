@@ -1,18 +1,18 @@
-const path = "/images2023/committee/";
+const path = "/images2024/committee/";
 const majorPlacehold = "Major, Year"
 const linkedInPlacehold = "https://www.linkedin.com"
 
-const names = [["Brandon Matthews", "Audrey Leyva"], 
-["Sourish Wawdhane (Chair)", "Emma George", "Caleb Devon", "Regina Ramirez-Anzures", "Gabby Smith", "Tracy Miranda"],
-["Minh Quan Duong (Chair)", "Uma Paul", "Laura Murphy", "Cindey Xiao"],
-["Lorren Banker (Chair)", "Jenna May", "Taima Crean", "Evan O'Suilleabhain", "Manisha Sakthivelnathan"],
-["Falak Shah (Chair)", "Phoenix Saavedra", "Basil Al Rehani", "Yashna Singhania", "Tanisha Bhattacharya", "Bhanaviya Venkat"]];
+const names = [["Sourish Wawdhane", "Minh Quan Duong"], 
+["Caleb Devon (Chair)", "Vivek Keval", "Callum Murphey", "Anik Patel", "Collis Whitfield"],
+["Jett Winkler (Chair)", "Kayla Awadin", "Jiwoo Park", "Carlos Piña-Martinez", "Ella Tomaselli"],
+["Lorren Banker (Chair)", "Michelle Alex", "Leona Alonso", "Lisa Du", "Bhanaviya Venkat", "Alejandro Villasenor"],
+["Manisha Sakthivelnathan (Chair)", "Joseph Jimenez", "Gabriela Martin", "Evan O’Suilleabhain", "Connor Sanders", "Jennifer Xue"]];
 
-const files = [["Brandon_Matthews.webp", "Audrey_Leyva.webp"], 
-["Sourish_Wawdhane.webp", "Emma_George.webp", "Caleb_Devon.webp", "Regina_Ramirez.webp", "Gabby_Smith.webp", "Tracy_Miranda.webp"],
-["Minh_Quan_Duong.webp", "Uma_Paul.webp", "Laura_Murphey.webp", "Cindey_Xiao.webp"],
-["Lorren_Banker.webp", "Jenna_May.webp", "Taima_Crean.webp", "Evan_OSuilleabhain.webp", "Manisha_Sakthivelnathan.webp"],
-["Falak_Shah.webp", "Phoenix_Saavedra.webp", "Basil_Rehani.webp", "Yashna_Singhania.webp", "Tanisha_Bhattacharya.jfif", "Bhanaviya_Venkat.webp"]];
+const files = [["Sourish_Wawdhane.JPG", "Minh_Duong.JPG"], 
+["Caleb_Devon.JPG", "Vivek_Keval.JPG", "Callum_Murphey.jpg", "Anik_Patel.JPG", "Collis_Whitfield.JPG"],
+["Jett_Winkler.JPG", "Kayla_Awadin.JPG", "Jiwoo_Park.JPG", "Carlos_Pina.JPG", "Ella_Tomaselli.JPG"],
+["Lorren_Banker.JPG", "Michelle_Alex.JPG", "Jiwoo_Park.JPG", "Lisa_Du.JPG", "Bhanaviya_Venkat.JPG", "Alejandro_Villasenor.JPG"],
+["Manisha_Sakthivelnathan.JPG", "Joseph_Jiminez.JPG", "Gabriela_Martin.JPG", "Evan_OSuilleabhain.JPG", "Connor_Sanders.JPG", "Jennifer_Xue.JPG"]];
 
 const linkedIn = [["https://www.linkedin.com/in/brandoncmatthews/", "https://www.linkedin.com/in/audrey-leyva/"], 
 ["https://www.linkedin.com/in/sourishw/", "https://www.linkedin.com/in/emmagracegeorge/", "https://www.linkedin.com/in/caleb-devon-604a41227/", "https://www.linkedin.com/in/regina-ramirez-anzures-8a50b0270/", "https://www.linkedin.com/in/smithgmca/", "https://www.linkedin.com/in/tracyym/"],
