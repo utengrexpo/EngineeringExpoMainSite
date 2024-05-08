@@ -21,7 +21,7 @@ const linkedIn = [["https://www.linkedin.com/in/sourishw/", "https://www.linkedi
 ["https://www.linkedin.com/in/manisha-sakthivelnathan/", "https://www.linkedin.com/in/joseph-jimenez05/", "https://www.linkedin.com/in/gabriela-a-martin-b0772929a/", "https://www.linkedin.com/in/evan-osuilleabhain/", "https://www.linkedin.com/in/connor-sanders-18a8532b1/", "https://www.linkedin.com/in/jenniferxue333/"]]
 
 const major = [["Electrical and Computer Engineering '25", "Chemical Engineering '26"],
-["Electrical and Computer Engineering '25", "Mechanical Engineering '27", "Electrical and Computer Engineering '25", "Electrical and Computer Engineering '26", "Civil Engineering '26"],
+["Electrical and Computer Engineering '25", "Electrical and Computer Engineering '25", "Mechanical Engineering '27", "Electrical and Computer Engineering '26", "Civil Engineering '26"],
 ["Electrical and Computer Engineering '26", "Chemical Engineering '26", "Electrical and Computer Engineering '26", "Chemical Engineering '26", "Civil Engineering '26"],
 ["Mechanical Engineering '25", "Architectural Engineering '27", "Civil Engineering '27", "Biomedical Engineering '27", "Biomedical Engineering '26", "Electrical and Computer Engineering '26"],
 ["Electrical and Computer Engineering '26", "Electrical and Computer Engineering '27", "Civil Engineering '27", "Mechanical Engineering '25", "Electrical and Computer Engineering '26", "Mechanical Engineering '27"]]
