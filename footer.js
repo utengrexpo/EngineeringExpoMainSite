@@ -21,10 +21,10 @@ document.write('\
                 style="width: 50px; margin-left: 20px;" src="/images2021/LinkedInwhitetranparent.png"\
                 alt="White LinkedIn logo."></a>\
         </div>\
-        <div style="width: 400px;" class="text-align-center">\
+        <div style="width: 300px;" class="text-align-center">\
             <br>\
             <br>\
-            <p>\
+            <p style="width:400px">\
                 Sourish Wawdhane and Minh Quan Duong<br/>\
                 Cockrell School of Engineering<br />\
                 The University of Texas at Austin<br />\
