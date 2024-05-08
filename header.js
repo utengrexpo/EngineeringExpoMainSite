@@ -1,5 +1,11 @@
 document.write('\
-\<div class="topnav" id="theTopnav">    \
+<a href="/"\
+      ><img\
+        class="logo"\
+        src="/images2024/Expo_Logo_2024.png"\
+        alt="The 2021 Expo logo"\
+    /></a>\
+<div class="topnav" id="theTopnav">    \
 <div class="topnav_bg"></div>           \
 <a href="/" class="active">Home</a>     \
 <a href="/corporate">Corporate</a>      \
