@@ -5,7 +5,7 @@
 #frameHolder {
   position: relative;
   width: 90vw;
-  height: calc(100pc + 50vw);
+  height: calc(120pc + 50vw);
 
   margin-left: 5vw;
   /*margin-top: 5vw;*/
