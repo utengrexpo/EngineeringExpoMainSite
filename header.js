@@ -14,6 +14,7 @@ document.write('\
 <a href="/corporate/schedule">Schedule</a>  \
 <a href="/student/senior-reception">Senior Reception</a>    \
 <a href="/project">Expo Service Project</a>          \
+<a href="/boothmaps">Booth Maps</a>          \
 <a href="/activity">Activity</a>                             \
 <a href="/faq">FAQ</a>                  \
 <a href="/about">About Us</a>           \
@@ -23,5 +24,4 @@ document.write('\
 </div>                                  \
 \
 ')
-//<a href="/boothmaps">Booth Maps</a>          \
 
